@@ -1,4 +1,4 @@
-import cloudinary from "../../src/middleware/cloudianry.js";
+import cloudinary from "../../srx/middleware/cloudianry.js";
 import { ObjectId } from "bson";
 import mongoose, { Schema, model } from "mongoose";
 import { type } from "os";

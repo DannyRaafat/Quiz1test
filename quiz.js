@@ -4,14 +4,12 @@ process.on(`uncaughtException`, () => {
 
 import express from 'express'
 import { dbConnection } from './database/dbConnection.js'
-import { errorhandle } from './src/utils/errorhandle.js'
-import { globalerror } from './src/middleware/globalerror.js'
-import UserRouter from './src/modules/User/user.routes.js'
-import CompanyRouter from './src/modules/Company/Company.routes.js'
-import JobsRouter from './src/modules/Jobs/Jobs.routes.js'
-import { upload } from './src/middleware/multer.js'
-import { Application } from './database/models/Application.model.js'
-
+import { errorhandle } from './srx/utils/errorhandle.js'
+import { globalerror } from './srx/middleware/globalerror.js'
+import UserRouter from './srx/modules/User/user.routes.js'
+import CompanyRouter from './srx/modules/Company/Company.routes.js'
+import JobsRouter from './srx/modules/Jobs/Jobs.routes.js'
+ 
 
 const app = express()
 
