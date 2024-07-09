@@ -12,7 +12,7 @@ import JobsRouter from './src/modules/Jobs/Jobs.routes.js'
  
 
 const app = express()
-
+app.use(cors())
 app.use(express.json())
 app.use('/User',UserRouter)
 app.use('/company',CompanyRouter)
