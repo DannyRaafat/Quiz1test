@@ -1,5 +1,3 @@
-import Joi from "joi";
-import { User } from "../../../database/models/user.model.js";
 import { compareSync, hashSync } from "bcrypt";
 import { catcherror } from "../../middleware/catcherror.js";
 import { errorhandle } from "../../utils/errorhandle.js";
@@ -8,6 +6,8 @@ import { Verify_email } from "../../emails/emails.js";
 import { Job } from "../../../database/models/Job.model.js";
 import { Company } from "../../../database/models/Company.model.js";
 import { Application } from "../../../database/models/Application.model.js";
+import { User } from "../../../database/models/user.model.js";
+
 
 
 const signup = catcherror(async (req, res) => {
