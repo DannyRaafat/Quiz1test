@@ -1,6 +1,7 @@
 process.on(`uncaughtException`, () => {
     console.log(`erorr in code`)
 })
+import cors  from 'cors'
 
 import express from 'express'
 import { dbConnection } from './database/dbConnection.js'
