@@ -13,4 +13,4 @@ const schema = new Schema({
 },{
     versionKey:false
 })
-export const Company=model("Company",schema)
+export const Company =model("Company",schema)
